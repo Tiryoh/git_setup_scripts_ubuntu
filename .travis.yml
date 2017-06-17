@@ -1,0 +1,18 @@
+sudo : required
+dist : trusty
+cache : 
+  - apt
+branches : 
+  only : 
+    - master
+    - dev
+env:
+  global:
+    - HOME=/home/travis
+before_install :
+  - sudo apt-get update -qq
+script :
+  - curl -SsfL https://git.io/ubuntu-git-install | bash
+  - ls $HOME/usr/local/bin
+  - $HOME/usr/local/bin/git --version
+
