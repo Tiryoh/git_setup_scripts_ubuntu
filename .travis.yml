@@ -12,7 +12,7 @@ env:
 before_install :
   - sudo apt-get update -qq
 script :
-  - curl -SsfL https://git.io/ubuntu-git-install | bash
+  - curl -SsfL https://git.io/ubuntu-git-install | sh
   - ls $HOME/usr/local/bin
   - $HOME/usr/local/bin/git --version
 

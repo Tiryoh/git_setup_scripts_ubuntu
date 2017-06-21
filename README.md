@@ -9,7 +9,7 @@ setup scripts to setup the latest version git for GNU/Linux Ubuntu
 ### Simple Installation
 
 ```
-curl -SsfL https://git.io/ubuntu-git-install | bash
+curl -SsfL https://git.io/ubuntu-git-install | sh
 ```
 
 ### Manual Installation
